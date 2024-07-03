@@ -1,6 +1,8 @@
 export class User{
     sno: number | any
-    fullName: string | any
+    firstName: string | any
+    lastName: string | any
     address: string | any
+    phoneNumber: number | any
     active: boolean | any
 }

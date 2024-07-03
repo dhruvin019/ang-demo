@@ -16,6 +16,8 @@
             "outputPath": "dist/test",
             "index": "src/index.html",
             "main": "src/main.ts",
+           
+
             "polyfills": [
               "zone.js"
             ],
@@ -96,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "91d626f5-92de-4ea6-a6b7-0fb5cea41fb8"
   }
 }

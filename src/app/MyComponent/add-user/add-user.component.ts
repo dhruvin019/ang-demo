@@ -7,8 +7,10 @@ import { User } from 'src/app/User';
   styleUrls: ['./add-user.component.css']
 })
 export class AddUserComponent implements OnInit {
-  fullName:string | undefined ;
+  firstName:string | undefined ;
+  lastName:string | undefined ;
   address:string | undefined;
+  phoneNumber:Number | undefined;
   @Output() userAdd: EventEmitter<User> = new EventEmitter();
 
   constructor() { }
@@ -18,8 +20,10 @@ export class AddUserComponent implements OnInit {
   onSubmit(){
     const user = {
       sno: 1,
-      fullName: this.fullName,
+      firstName: this.firstName,
+      lastName: this.lastName,
       address: this.address,
+      phoneNumber : this.phoneNumber,
       active: true
     }
     this.userAdd.emit(user);
